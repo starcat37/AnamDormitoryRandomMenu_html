@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>🍚오늘 뭐먹지?</title>
+  </head>
+
+  <body>
+    <script>
+      function ResultPage(){
+        location.href = 'result.html'
+      }
+    </script>
+    <h1> 🍚 오늘 뭐 먹지? 🍚 </h1>
+    <h2> *** 안암 긱사러를 위한 식사 메뉴 추천 *** </h2>
+    <h3>배달/포장(방문) 선택</h3>
+    <form>
+      <select name="inout">
+        <option value="in">배달</option>
+        <option value="out">포장(방문)</option>
+      </select>
+    </form>
+    <h3>특별히 먹고 싶은 메뉴가 있나요?</h3>
+    <form>
+      <select name="prefer">
+        <option value="any">딱히 없음</option>
+        <option value="ko">한식</option>
+        <option value="en">양식</option>
+        <option value="jp">일식</option>
+        <option value="ch">중식</option>
+      </select>
+    </form>
+    <h3>전부 골랐으면 추천!</h3>
+    <input type="button" value="뭐 먹지?" onclick="ResultPage();">
+  </body>
+</html>
