@@ -1,11 +1,23 @@
+<!-- 1. 변수 전달 받기
+2. 받은 value 값에 따라 food 배열 안의 정해진 범위 할당, 그 안에서 랜덤 출력
+3. 스타일(CSS) -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>🍚오늘 뭐먹지?</title>
+
   </head>
   <body>
     <h1> 🍚 오늘 뭐 먹지? 🍚 </h1>
     <h2> 오늘 이 메뉴 어때요? </h2>
+    <script type="text/javascript">
+      var food = ["고른햇살", "미스터국밥", "아바이 토종 순대국", "토로 생선구이",
+                  "영철버거", "어흥식당", "짱가네 돈냉면", "베나레스",
+                  "특별식당", "백소정", "쿠이도라쿠", "마카나이",
+                  "용초수", "언니네반점", "차이니웍", "수저가"]
+      var selected = Math.floor(Math.random() * food.length);
+      document.write(food[selected]);
+    </script>
   </body>
 </html>
