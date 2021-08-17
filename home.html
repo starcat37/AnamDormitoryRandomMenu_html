@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>🍚오늘 뭐먹지?</title>
   </head>
 
@@ -11,7 +12,7 @@
     <h3>특별히 먹고 싶은 메뉴가 있나요?</h3>
 
     <form>
-      <select name="menu">
+      <select id="menu" onchange="selectBoxChange(this.value);">
         <option value="any">딱히 없음</option>
         <option value="ko">한식</option>
         <option value="en">양식</option>
@@ -19,6 +20,14 @@
         <option value="ch">중식</option>
       </select>
     </form>
+
+    <script type="text/javascript">
+      var selectBoxChange = function(value){
+        var prefer = $("#menu").val();
+        localStorage.setItem("hello", prefer);
+      }
+    </script>
+
     <input type="button" onclick="location.href='result.html'" value="결과 보기">
   </body>
 </html>
