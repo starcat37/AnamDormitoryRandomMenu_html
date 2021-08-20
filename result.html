@@ -1,15 +1,23 @@
-<!-- 1. 스타일(CSS) -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>🍚오늘 뭐먹지?</title>
+    <style>
+      body{text-align: center;}
+      p{font-weight: bold;}
+      figcaption{font-size: 5px;}
+      div{font-size: 25px; font-weight: bold; color: darksalmon;}
+    </style>
   </head>
   <body>
     <h1> 🍚 오늘 뭐 먹지? 🍚 </h1>
-    <h2> 오늘 이 메뉴 어때요? </h2>
+    <p> 오늘 이 메뉴 어때요? </p>
+    <img src="C:\Users\User\Desktop\학교\언어학과\미언프\2021\중간보고서\nongdamgom.png" alt="호떡 먹는 농담곰 / Joke bear eating hotteok" width="300">
+    <figcaption><a href="https://bit.ly/3ka6awA" target="_blank">이미지 출처</a></figcaption><br>
 
+  <div>
     <script type="text/javascript">
       if(localStorage.getItem("hello")){
         var menu = localStorage.getItem("hello")
@@ -40,5 +48,6 @@
       }
       document.write(food[selected]);
     </script>
+  </div>
   </body>
 </html>
