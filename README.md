@@ -3,4 +3,4 @@
 
 https://starcat37.github.io/AnamRandomMenu/
 
-https://light-owl-08c.notion.site/9eed6bc9ba164bb9950f7df365e05a74
+https://starcat37.notion.site/9eed6bc9ba164bb9950f7df365e05a74
